@@ -1,6 +1,6 @@
 {
   "name": "use-fetch-suspense",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React hooks for data fetching with Suspense",
   "author": "nibblesnbits",
   "license": "MIT",
