@@ -26,15 +26,12 @@
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "^2.1.0",
-    "@svgr/rollup": "^2.4.1",
     "@types/react": "^16.9.19",
     "@types/react-dom": "^16.9.5",
     "babel-core": "^6.26.3",
     "babel-runtime": "^6.26.0",
     "cross-env": "^5.1.4",
     "gh-pages": "^1.2.0",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
     "react-scripts-ts": "^3.1.0",
     "rollup": "^1.29.1",
     "rollup-plugin-babel": "^4.3.3",
@@ -47,5 +44,6 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {}
 }
