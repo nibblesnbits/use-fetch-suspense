@@ -1,7 +1,24 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React, { Suspense } from 'react';
+import ReactDOM from 'react-dom';
+import { FetchProvider, useFetch } from 'use-fetch';
 
-import './index.css'
-import App from './App'
+const Fetcher = () => {
+  const data = useFetch('breeds/image/random');
+  return data ? <img alt="dog" src={data.message} /> : null;
+};
 
-ReactDOM.render(<App />, document.getElementById('root'))
+const App = () => {
+  return (
+    <FetchProvider
+      config={{
+        baseUri: 'https://dog.ceo/api/',
+      }}
+    >
+      <Suspense fallback="Loading...">
+        <Fetcher />
+      </Suspense>
+    </FetchProvider>
+  );
+};
+
+ReactDOM.render(<App />, document.getElementById('root'));
