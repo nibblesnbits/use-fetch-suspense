@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
-import { FetchProvider, useFetch } from 'use-fetch';
+import { FetchProvider, useFetch } from 'use-fetch-suspense';
 
 const Fetcher = () => {
   const data = useFetch('breeds/image/random');

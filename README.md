@@ -1,20 +1,20 @@
-# use-fetch
+# use-fetch-suspense
 
 > Use [Suspense for Data Fetching](https://reactjs.org/docs/concurrent-mode-suspense.html) early!
 
-[![NPM](https://img.shields.io/npm/v/use-fetch.svg)](https://www.npmjs.com/package/use-fetch) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/use-fetch-suspense.svg)](https://www.npmjs.com/package/use-fetch-suspense) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
 ```bash
-npm i -S use-fetch
+npm i -S use-fetch-suspense
 ```
 
 ## Usage
 
 ```jsx
 import React, { Suspense } from "react";
-import { FetchProvider, useFetch } from "use-fetch";
+import { FetchProvider, useFetch } from "use-fetch-suspense";
 
 const Fetcher = () => {
   const data = useFetch("breeds/image/random");
