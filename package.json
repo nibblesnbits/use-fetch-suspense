@@ -4,7 +4,7 @@
   "description": "React hooks for data fetching with Suspense",
   "author": "nibblesnbits",
   "license": "MIT",
-  "repository": "nibblesnbits/use-fetch",
+  "repository": "https://github.com/nibblesnbits/use-fetch-suspense",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
